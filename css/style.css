@@ -159,7 +159,7 @@ input {
 }
 
 .custom-tip {
-	font-size: inherit;
+	font-size: 1.2rem;
 	padding: 0 0.8rem;
 	height: 100%;
 	margin: 0;
@@ -267,9 +267,15 @@ input {
 
 /************************/
 @media screen and (max-width: 48.12em) {
+	body {
+		padding: 0;
+	}
+
 	.container {
 		grid-template-columns: 1fr;
 		row-gap: 2rem;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
 	}
 
 	.tip__result--display {
@@ -278,10 +284,6 @@ input {
 }
 
 @media screen and (max-width: 31.25em) {
-	body {
-		padding: 0;
-	}
-
 	.tip__container {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -289,8 +291,6 @@ input {
 	.container {
 		row-gap: 3.6rem;
 		padding: 2.5rem 1.2rem 1.6rem;
-		border-bottom-left-radius: 0;
-		border-bottom-right-radius: 0;
 	}
 
 	.bill__container {
