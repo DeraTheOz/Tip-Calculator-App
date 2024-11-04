@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+
+		<script defer src="script.js"></script>
+
+		<title>Tip calculator app</title>
+	</head>
+	<body>
+		<header class="header">
+			<img class="logo" src="images/logo.svg" alt="logo image" />
+		</header>
+
+		<main>
+			<section class="container">
+				<div class="bill__container">
+					<form action="#" class="form">
+						<label for="bill" class="label-bill"
+							>Bill <span></span
+						></label>
+						<input
+							type="number"
+							name="bill"
+							id="bill"
+							class="input__icon-dollar"
+							placeholder="0"
+							min="0"
+							dir="rtl"
+							required
+						/>
+					</form>
+
+					<ul class="tip__container">
+						<h2 class="tip__header">Select Tip %</h2>
+						<li class="tip__percent" data-tip="5">5%</li>
+						<li class="tip__percent" data-tip="10">10%</li>
+						<li class="tip__percent" data-tip="15">15%</li>
+						<li class="tip__percent" data-tip="25">25%</li>
+						<li class="tip__percent" data-tip="50">50%</li>
+						<li>
+							<input
+								type="text"
+								name="custom-tip"
+								class="custom-tip"
+								id="custom-tip"
+								inputmode="numeric"
+								pattern="\d*"
+								placeholder="Custom"
+								dir="rtl"
+							/>
+						</li>
+					</ul>
+
+					<form action="#" class="form">
+						<label for="num-people" class="label-persons"
+							>Number of People <span></span
+						></label>
+						<input
+							type="text"
+							name="num-people"
+							id="num-people"
+							inputmode="numeric"
+							pattern="\d*"
+							placeholder="0"
+							class="input__icon-person"
+							dir="rtl"
+							required
+						/>
+					</form>
+				</div>
+
+				<div class="tip__result--display">
+					<div class="tip__result">
+						<h3 class="tip__amount">
+							Tip Amount <span>/ person</span>
+						</h3>
+						<p class="tip__per--person">$0.00</p>
+					</div>
+
+					<div class="tip__result">
+						<h3 class="tip__amount">Total <span>/ person</span></h3>
+						<p class="tip__total">$0.00</p>
+					</div>
+
+					<button type="submit" class="btn">Reset</button>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
